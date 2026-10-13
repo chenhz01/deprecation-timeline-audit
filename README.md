@@ -2,6 +2,8 @@
 
 A stdlib-only auditor for API deprecation timelines: extracts sunset dates (ISO or prose like "June 1, 2027") from declarations or docs, grades urgency (expired / imminent / soon / ok), and checks replacements, date ordering, and grace-period consistency. If you deprecate APIs faster than you remember to remove them, use this; otherwise skip it.
 
+<p align="center"><img src="docs/demo.gif" alt="demo" width="720"></p>
+
 ## Problem
 
 Deprecation announcements are easy; sunsets are missed. A deprecated endpoint with no sunset date lives forever, an announced sunset passes silently, and "grace period: 90 days" turns out to exceed the actual deprecation-to-sunset span. Teams need one deterministic audit they can run on a declarations file or docs page.
